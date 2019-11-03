@@ -1,0 +1,23 @@
+.b-social-network {
+    background-color: rgba($color: $primary-color-light, $alpha: 0.5);
+    width: 90%;
+    margin: 7% auto 0;
+    text-align: center;
+}
+
+.b-social-network__item {
+    font-size: 250%;
+    padding: 3%;
+    color: $primary-color-light;
+}
+  
+.b-social-network__item:hover {
+    color: $primary-color-dark;
+}
+
+@media screen and (min-width: $primary-min-width) {
+    .b-social-network {
+        width: 75%;
+        margin: 4% auto 0;
+    }
+}

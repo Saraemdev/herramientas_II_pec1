@@ -1,0 +1,21 @@
+.b-form {
+    width: 75%;
+    margin: 0 auto;
+}
+
+.b-form__item {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    font-family: $primary-font-family;
+    border: 2px solid $primary-color-dark;
+    border-radius: 5%;
+}
+
+fieldset {
+    padding: 7%;
+    border-radius: 5%;
+    border: 1px solid $primary-color-light;
+    background-color: $secondary-color-light;
+}

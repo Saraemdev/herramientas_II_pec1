@@ -1,0 +1,146 @@
+/* Main menu mobile */
+
+.b-menu__logo {
+    float: left;
+    padding-top: 2%;
+    padding-left: 50%;
+    height: 75px;
+}
+
+.b-menu__main {
+    position: fixed;
+    top: 0;
+    left: 0;
+    margin: 80px auto 0;
+    width: 100%;
+    flex-flow: column nowrap;
+    align-content: stretch;
+    display: none;
+
+    & li {
+        flex: 1;
+        display: flex;
+        flex-flow: column nowrap;
+        align-items: center;
+        text-align: center;
+        border-bottom: 1px solid $primary-color-dark;
+        background: $primary-color-light;
+    }
+
+    & a {
+        flex: 1;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        font-size: 26px;
+        display: flex;
+        color: $primary-color-dark;
+    }
+
+    & a:hover {
+        background-color: $primary-color-dark;
+        color: $primary-color-light;
+    }
+}
+
+/* Toggle button */
+
+#b-menu-show {
+    display: none;    //hide checkbox
+}
+
+#b-menu-show:checked ~ .b-menu__main { //depending the checkbox
+    display: flex;
+}
+  
+#b-menu-toggler {
+    width: 80px;
+    height: 80px;
+    position: fixed;
+    top: 0;
+    right: 0;
+    padding: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#b-menu-toggler-icon::after,
+#b-menu-toggler-icon::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: -9px;
+}
+
+#b-menu-toggler-icon::after {
+    top: 9px;
+}
+
+#b-menu-toggler-icon {
+    position: relative;
+    display: block;
+}
+
+#b-menu-toggler-icon,
+#b-menu-toggler-icon::after,
+#b-menu-toggler-icon::before {
+    width: 100%;
+    height: 5px;
+    background-color: $primary-color-light;
+    transition: all 0.3s;
+    backface-visibility: hidden;
+    border-radius: 2px;
+}
+
+//toggle animation
+#b-menu-show:checked ~ #b-menu-toggler > #b-menu-toggler-icon {
+    background-color: transparent;
+}
+
+#b-menu-show:checked ~ #b-menu-toggler > #b-menu-toggler-icon::before {
+    transform: rotate(45deg) translate(5px, 5px);
+}
+
+#b-menu-show:checked ~ #b-menu-toggler > #b-menu-toggler-icon::after {
+    transform: rotate(-45deg) translate(7px, -8px);
+}
+
+/* Main menu desktop */
+@media only screen and (min-width: $secondary-min-width) {
+    .b-menu__main,
+    nav {
+        width: 100%;
+    }
+
+    #b-menu-toggler {
+        display: none;
+    }
+    
+    .b-menu__main {
+        position: initial;
+        display: flex;
+        flex-flow: row nowrap;
+        flex-direction: row;
+        justify-content: flex-end;
+        height: 80px;
+        margin-top: 0;
+
+        & li {
+            border-bottom: none;
+            background: transparent;
+        }
+
+        & a {
+            font-size: 22px;
+            width: 50%;
+            padding-left: 16px;
+            color: $primary-color-light;
+        }
+
+        & a:hover {
+            background-color: $primary-color-light;
+            color: $primary-color-dark;
+        }
+    }
+}

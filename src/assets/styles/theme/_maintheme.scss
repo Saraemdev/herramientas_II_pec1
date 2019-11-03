@@ -1,0 +1,13 @@
+.b-section--dark {
+    background: $primary-color-dark;
+    color: $primary-color-light;
+}
+
+.b-section--light {
+    background: $primary-color-light;
+    color: $primary-color-dark;
+}
+
+.b-container__icon {
+    color: $secondary-color-dark;
+}

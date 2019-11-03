@@ -8,13 +8,216 @@
     <title>PEC 1: Sara Esteban Miguel Resume</title>
   </head>
   <body>
-    <img src="assets/images/logo.png" alt="Universitat Oberta de Catalunya" class="uoc-logo">
-    <h1 class="uoc-title">Hello, this is my first PEC!</h1>
-    <i class="fas fa-university"></i>
-    <p>
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus aliquid tempora aliquam praesentium sed non?
-    </p>
 
+    <header class="b-menu">
+      <a href="#"><img src="assets/images/saraemdev.png" alt="Logo" class="b-menu__logo"></a>
+      <nav>
+        <input type="checkbox" id="b-menu-show" role="button">
+        <label for="b-menu-show" id="b-menu-toggler">
+          <div id="b-menu-toggler-icon"></div>
+        </label>
+        <ul class="b-menu__main">
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#education">Education</a></li>
+          <li><a href="#work">Work</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <section class="b-showcase">
+      <h1>Hello. I'm Sara</h1> 
+      <p>Future developer. Available for work</p>
+      <a href="#" class="b-btn">Contact me</a>
+    </section>
+
+    <section id="about" class="b-section b-section--dark">
+        <h2>About me</h2>
+        <img src="assets/images/personal.jpg" alt="personal img" class="b-section__img">
+        <h3>Sara Esteban Miguel</h3>
+        <p>I'm a digital lover looking for new horizons in a technologic world.</p> 
+        <p>Always learning and trying to improve skills for new challenges.</p>
+        <p>Based in Spain, I'm dreaming with an eco and sustainable life close to the Tenerife sea.</p>
+        <div class="b-social-network">
+            <a href="https://www.linkedin.com/in/saraestebanmiguel/"><i class="fab fa-linkedin b-social-network__item"></i></a>
+            <a href="https://www.facebook.com/nymai"><i class="fab fa-facebook-square b-social-network__item"></i></a>
+            <a href="https://twitter.com/nymai79"><i class="fab fa-twitter-square b-social-network__item"></i></a>
+            <a href="https://github.com/Saraemdev"><i class="fab fa-github-square b-social-network__item"></i></a>
+            <a href="#contact"><i class="fas fa-envelope b-social-network__item"></i></a>
+        </div>
+    </section>
+    
+    <section id="skills" class="b-section b-section--light">
+      <h2>My skills</h2>
+      <div class="b-container">
+        <table>
+          <tr>
+            <th rowspan="4">Languages</th>
+            <td>Spanish</td>
+          </tr>
+          <tr><td>English</td></tr>
+          <tr><td>Italian</td></tr>
+          <tr><td>French</td></tr>
+          <tr><td> </td></tr><tr><td> </td></tr>
+          <tr><td> </td></tr><tr><td> </td></tr>
+          <tr><td> </td></tr><tr><td> </td></tr>
+          <tr>
+            <th rowspan="20">Skills</th>
+            <td>HTML</td>
+            <td>CSS</td>
+          </tr>
+          <tr><td>JavaScript</td><td>Wordpress</td></tr>
+          <tr><td>Drupal</td><td>C#</td></tr>
+          <tr><td>MySQL</td><td>Unity 3D</td></tr>
+          <tr><td>PHP</td><td>Adobe Illustrator</td></tr>
+          <tr><td>Adobe Premiere</td><td>Adobe After Effects</td></tr>
+          <tr><td>3ds Studio Max</td><td>Processing</td></tr>
+          <tr><td>Three.JS</td><td>Teaching</td></tr>
+          <tr><td>Social media</td><td>Audiovisual production</td></tr>
+          <tr><td>Transparency</td><td>Data protection</td></tr>
+        </table>
+      </div>
+    </section>
+    
+    <section id="education" class="b-section b-section--dark">
+      <h2>Education</h2>
+      <div class="b-container">
+        <table>
+          <tr>
+            <th>Universitat Oberta de Catalunya</th>
+            <th>Bachelor Multimedia (specialization in videogames)</th>
+          </tr>
+          <tr>
+            <td><i class="fas fa-map-marker-alt b-container__icon"></i> Online</td>
+            <td>2013-2018</td>
+          </tr>
+          <tr><td> </td></tr><tr><td> </td></tr>
+          <tr>
+            <th>FEMP e ILF</th>
+            <th>Course in Cognitive accessibility, clear language and easy reading in local administration</th>
+          </tr>
+          <tr>
+            <td><i class="fas fa-map-marker-alt b-container__icon"></i> Madrid (Spain)</td>
+            <td>2017</td>
+          </tr>
+          <tr><td> </td></tr><tr><td> </td></tr>
+          <tr>
+            <th>FRMP</th>
+            <th>Course in Community manager in public administration</th>
+          </tr>
+          <tr>
+            <td><i class="fas fa-map-marker-alt b-container__icon"></i> Online</td>
+            <td>2016</td>
+          </tr>
+          <tr><td> </td></tr><tr><td> </td></tr>
+          <tr>
+            <th>UOCx</th>
+            <th>Course in Coding for everyone with Scratch</th>
+          </tr>
+          <tr>
+            <td><i class="fas fa-map-marker-alt b-container__icon"></i> Online</td>
+            <td>2013-2018</td>
+          </tr>
+          <tr><td> </td></tr><tr><td> </td></tr>
+          <tr>
+            <th>Forum Castilla y León</th>
+            <th>Superior technician in audiovisual, radio and shows production</th>
+          </tr>
+          <tr>
+            <td><i class="fas fa-map-marker-alt b-container__icon"></i> Valladolid (Spain)</td>
+            <td>2000-2002</td>
+          </tr>
+          <tr><td> </td></tr><tr><td> </td></tr>
+          <tr>
+            <th>Centro de estudios Santa María del Castillo</th>
+            <th>Superior technician in commercial management and marketing</th>
+          </tr>
+          <tr>
+            <td><i class="fas fa-map-marker-alt b-container__icon"></i> Buitrado de Lozoya (Spain)</td>
+            <td>1998-2000</td>
+          </tr>              
+        </table>
+      </div>
+    </section>
+    
+    <section id="work" class="b-section b-section--light">
+      <h2>Work experience</h2>
+      <div class="b-container">
+        <table>
+          <tr>
+            <th>Ayuntamiento de Aranda de Duero</th>
+            <th>Library assistant</th>
+          </tr>
+          <tr>
+            <td><i class="fas fa-map-marker-alt b-container__icon"></i> Aranda de Duero</td>
+            <td>2019-Present</td>
+          </tr>
+          <tr><td> </td></tr><tr><td> </td></tr><tr><td> </td></tr><tr><td> </td></tr>            
+          <tr>
+            <th>Ayuntamiento de Aranda de Duero</th>
+            <th>Local mobile app responsible</th>
+          </tr>
+          <tr>
+            <td><i class="fas fa-map-marker-alt b-container__icon"></i> Aranda de Duero</td>
+            <td>2017-2019</td>
+          </tr>
+          <tr><td> </td></tr><tr><td> </td></tr><tr><td> </td></tr><tr><td> </td></tr>            
+          <tr>
+            <th>Ayuntamiento de Aranda de Duero</th>
+            <th>Local transparency responsible</th>
+          </tr>
+          <tr>
+            <td><i class="fas fa-map-marker-alt b-container__icon"></i> Aranda de Duero</td>
+            <td>2017-2019</td>
+          </tr>
+          <tr><td> </td></tr><tr><td> </td></tr><tr><td> </td></tr><tr><td> </td></tr>
+          <tr>
+            <th>Ayuntamiento de Aranda de Duero</th>
+            <th>Culture assistant administrative</th>
+          </tr>
+          <tr>
+            <td><i class="fas fa-map-marker-alt b-container__icon"></i> Aranda de Duero</td>
+            <td>2016-2017</td>
+          </tr>    
+          <tr><td> </td></tr><tr><td> </td></tr><tr><td> </td></tr><tr><td> </td></tr> 
+          <tr>
+            <th>Ayuntamiento de Aranda de Duero</th>
+            <th>Library assistant</th>
+          </tr>
+          <tr>
+            <td><i class="fas fa-map-marker-alt b-container__icon"></i> Aranda de Duero</td>
+            <td>2006-2017</td>
+          </tr>
+          <tr><td> </td></tr><tr><td> </td></tr>
+          <tr>
+            <th>Instituto del cine de Madrid. NIC</th>
+            <th>Production manager</th>
+          </tr>
+          <tr>
+            <td><i class="fas fa-map-marker-alt b-container__icon"></i> Madrid (Spain)</td>
+            <td>2004</td>
+          </tr>
+        </table>
+      </div>
+    </section>
+
+    <section id="contact" class="b-section b-section--dark">
+      <h2>Contact me</h2>
+      <h4>I'm always interested about cool stuff. Let's talk!</h4>
+      <form class="b-form" action="#">
+        <fieldset>
+          <input class="b-form__item" type="text" name="b-form-fname" id="b-form-fname" placeholder="What's your name">
+          <textarea class="b-form__item" name="msg" id="b-form-msg" cols="30" rows="10" placeholder="Write something..."></textarea>
+          <button type="submit" class="b-btn">Send</button>
+        </fieldset>
+      </form>
+      <p>This resume is part of an UOC master subject test</p>
+    </section>
+
+    <footer class="b-section b-section--light">
+      <p>© Sara Esteban Miguel 2019</p>
+    </footer>
+    
     <script src="./assets/scripts/main.js"></script><!-- do not remove this line! -->
   </body>
 </html>

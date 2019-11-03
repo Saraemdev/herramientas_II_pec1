@@ -10,9 +10,15 @@
  * see commented examples below
  */
 
- @import "@fortawesome/fontawesome-free/css/all.css";
+@import "@fortawesome/fontawesome-free/css/all.css";
 // @import "some-node-module";
 // @import "@some-company/some-node-module";
+
+/**
+ * Import base
+ * It's defining the default styling, applied to html elements, no class or id selectors
+ */
+@import "base/default";
 
 /**
  * Import layouts
@@ -20,6 +26,24 @@
  */
 
 @import "layouts/home";
+
+/**
+ * Import modules
+ * It's defining discrete components, sits inside layour components
+ */
+
+@import "module/button";
+@import "module/contactform";
+@import "module/menu";
+@import "module/showcase";
+@import "module/socialnetwork";
+
+/**
+ * Import themes
+ * It's defining look and feel
+ */
+
+@import "theme/maintheme";
 
 /**
  * Do NOT include anything else in this file!
